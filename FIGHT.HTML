@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Last Great Fight</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fcfcff, #e3f0ff);
+      color: #222;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #4e91ff, #6efff3);
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 4.5em;
+      margin: 0;
+      text-shadow: 2px 2px 10px #333;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      background-color: #ffffff;
+      color: #4e91ff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background-color: #d8ecff;
+    }
+    .story {
+      display: none;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .chapter {
+      margin-bottom: 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .chapter h2 {
+      color: #0047ab;
+      font-size: 2.3em;
+    }
+    .chapter p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #333;
+    }
+    footer {
+      background-color: #4e91ff;
+      padding: 30px;
+      text-align: center;
+      color: #fff;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Last Great Fight</h1>
+    <button class="button" onclick="document.querySelector('.story').style.display='block'; scrollToStory()">Read the Story</button>
+  </header>
+
+  <div class="story">
+    <div class="chapter">
+      <h2>Chapter 1: The Monster in Decline</h2>
+      <p>
+        Mike Tyson was undefeated and feared, but behind the scenes, his life was unraveling. His split from Kevin Rooney broke ties with Cus D’Amato's legacy. Wild partying, fractured management, and fading focus plagued him. Tyson arrived in Tokyo for the 1990 fight untrained and overconfident — unaware that Buster Douglas was bringing more than fists to the ring.
+      </p>
+    </div>
+    <div class="chapter">
+      <h2>Chapter 2: The Forgotten Challenger</h2>
+      <p>
+        James “Buster” Douglas had a reputation for inconsistency and quitting. But after his mother's death, something changed. Media ignored him, promoters doubted him, but Douglas trained with heart and purpose. He came to Tokyo not as a footnote — but to write a chapter in history.
+      </p>
+    </div>
+    <div class="chapter">
+      <h2>Chapter 3: Tokyo Shockwave</h2>
+      <p>
+        February 11, 1990. Douglas dominated with jabs and movement. Tyson looked lost, bleeding, slow. In Round 8, Tyson knocked Douglas down — but he rose and returned with fury. In Round 10, Douglas unleashed a combination ending in a brutal uppercut. Tyson fell. For the first time ever, he couldn't rise before the count. The impossible had happened. Tyson was defeated.
+      </p>
+    </div>
+    <div class="chapter">
+      <h2>Chapter 4: Ripples of Glory and Ruin</h2>
+      <p>
+        Tyson spiraled into legal issues and incarceration; Douglas tasted glory but faded after a loss to Holyfield. The sport was forever changed. Joe Layden’s book doesn’t just detail a fight — it captures emotion, heartbreak, redemption, and a night that became boxing legend.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 The Last Great Fight. Tribute to Joe Layden’s legendary book.made by viraj rathore</p>
+  </footer>
+
+  <script>
+    function scrollToStory() {
+      setTimeout(() => {
+        document.querySelector('.story').scrollIntoView({ behavior: 'smooth' });
+      }, 200);
+    }
+  </script>
+
+</body>
+</html>
+
